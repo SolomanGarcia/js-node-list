@@ -1,0 +1,23 @@
+{
+  "name": "js-node-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolomanGarcia/js-node-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "nls": "index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/SolomanGarcia/js-node-list/issues"
+  },
+  "homepage": "https://github.com/SolomanGarcia/js-node-list#readme"
+}
