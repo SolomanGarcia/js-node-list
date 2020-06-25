@@ -3,7 +3,7 @@
 const fs = require("fs");
 const util = require("util");
 const chalk = require("chalk");
-const { file } = require("vfile-message");
+const path = require("path");
 
 const { lstat } = fs.promises;
 
@@ -21,7 +21,7 @@ fs.readdir(targetDir, async (err, filenames) => {
   }
 
   const statPromises = filenames.map((filename) => {
-    return lstat(filename);
+    return lstat(path.join(targetDir, filename));
   });
 
   const allStats = await Promise.all(statPromises);
