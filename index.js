@@ -7,7 +7,9 @@ const { file } = require("vfile-message");
 
 const { lstat } = fs.promises;
 
-fs.readdir(process.cwd(), async (err, filenames) => {
+const targetDir = process.argv[2] || process.cwd();
+
+fs.readdir(targetDir, async (err, filenames) => {
   // EITHER
   // err === an error object, which means something went wronge
   // OR
